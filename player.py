@@ -79,7 +79,7 @@ class MusicPlayer(ft.UserControl):
                 ],
                 alignment=ft.MainAxisAlignment.SPACE_BETWEEN
             ),
-            padding=ft.padding.only(left=10, right=5, top=5, bottom=5),
+            padding=ft.padding.only(left=10, right=5, top=5, bottom=5),  # Adjust the top margin to 0
             bgcolor=ft.colors.GREY_900,
             border_radius=ft.border_radius.only(top_left=10, top_right=10)
         )
@@ -87,9 +87,9 @@ class MusicPlayer(ft.UserControl):
         # Header - Song title
         self.header = ft.Text(
             value="Seleciona uma música",
-            size=20,
+            size=10,
             color=ft.colors.WHITE,
-            weight=ft.FontWeight.BOLD
+            weight=ft.FontWeight.BOLD   
         )
         
         # Add file picker button
@@ -439,7 +439,7 @@ def main(page: ft.Page):
     page.bgcolor = ft.colors.GREY_900
     page.padding = 0  # Removendo o padding para a barra de título personalizada ficar alinhada
     page.window_width = 495  # Set window width
-    page.window_height = 650  # Set window height
+    page.window_height = 520  # Set window height
     page.window_title_bar_hidden = True  # Hide window title bar
     page.window_bgcolor = ft.colors.TRANSPARENT  # Fundo transparente
     page.window_border_radius = 10  # Bordas arredondadas para a janela
